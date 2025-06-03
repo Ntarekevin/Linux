@@ -9,13 +9,14 @@ file2="$dir_name/submission2.txt"
 
 # Check if a file (not a directory) exists with the same name as dir_name
 if [ -f "$dir_name" ]; then
-    echo "Error: A file named '$dir_name' already exists."
+    echo "Error: There is a file named '$dir_name'"
     exit 1
 fi
 
 # Check if the directory already exists
 if [ -d "$dir_name" ]; then
     echo "Directory '$dir_name' already exists."
+
 else
     # Create the directory
     echo "Creating directory '$dir_name'..."
